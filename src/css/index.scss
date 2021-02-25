@@ -19,22 +19,175 @@ body {
     color: rgba(239, 90, 40, 1);
 }
 
+.hr-vertical {
+    border-left: 0.1rem solid rgba(239, 90, 40, 1);
+    height: 100%;
+}
+// // // //
+
+//Card Services
+
+.card-services {
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    display: none;
+    background-color: rgba(0, 0, 0, 0) !important;
+
+    .card-services-container:hover {
+        -ms-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    .card-services-container {
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-in-out;
+        .card-services-content-container {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(32, 32, 32, 0.5);
+            transition: all 0.2s ease-in-out;
+            .card-services-content {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .card-services-content-container:hover {
+            background-color: rgba(239, 90, 40, 0.8);
+        }
+    }
+}
+
+.card-plumbing {
+    background-image: url(../img/services/PLUMBING-2048x2048.webp);
+    // background: linear-gradient(rgba(32, 32, 32, 0.7), rgba(32, 32, 32, 0.7)),
+    //     url(../img/services/PLUMBING-2048x2048.webp);
+    background-size: cover;
+}
+.card-electrical {
+    background-image: url(../img/services/ELECTRICAL-2048x2048.webp);
+    background-size: cover;
+}
+.card-hvac {
+    background-image: url(../img/services/HVAC-2048x2048.webp);
+    background-size: cover;
+}
+.card-roofing {
+    background-image: url(../img/services/ROOFING-gettyimages-162761924-2048x2048.jpg);
+    background-size: cover;
+}
+// // // //
+
 //navigation
-nav {
-    .collapse {
-        .container-fluid {
-            .row {
-                .col-md-6 {
-                    .navbar-nav {
-                        .nav-item {
-                            .dropdown-menu {
-                                left: auto;
-                                right: 0 !important;
-                            }
-                        }
-                    }
+
+//navigation screen response
+@media screen and (max-width: 620px) {
+    .nav-bar {
+        max-height: 100px;
+        overflow: hidden;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        transition: all 0.8s;
+        .container {
+            display: block !important;
+        }
+    }
+    .nav-bar {
+        transition: 0.5s;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+    .toggle-button {
+        display: block !important;
+    }
+    .nav-bar-toggle {
+        flex-direction: column !important;
+        .nav-bar-nav-container {
+            justify-content: start !important;
+            width: 100%;
+            .nav-bar-nav {
+                align-items: start;
+                flex-direction: column;
+                padding-inline-start: 0px !important;
+                width: 100% !important;
+                li {
+                    width: 100% !important;
                 }
             }
         }
     }
 }
+@media screen and (min-width: 621px) {
+    .nav-bar {
+        .container {
+            display: none !important;
+        }
+    }
+    .toggle-button {
+        display: none !important;
+    }
+}
+
+.nav-bar-collapse {
+    max-height: 100% !important;
+    overflow: hidden;
+}
+.nav-bar-toggle-button-container {
+    margin: 20px;
+}
+.nav-bar-toggle {
+    display: flex;
+    flex-direction: row;
+
+    .nav-bar-logo {
+        width: fit-content;
+        padding: 10px;
+    }
+    .nav-bar-nav-container {
+        display: -webkit-box;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        .nav-bar-nav {
+            list-style-type: none;
+            margin: 0;
+            height: 100%;
+            // align-items: start;
+            display: flex;
+            // flex-direction: column;
+
+            li {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                transition: all 0.2s ease-in-out;
+                border-bottom: 3px solid rgba(0, 0, 0, 0);
+                a {
+                    display: block;
+                    text-decoration: none;
+                    padding: 20px;
+                }
+                a:hover {
+                    background-color: #646464;
+                }
+            }
+            li:hover {
+                background-color: #646464;
+                border-bottom: 3px solid rgba(239, 90, 40, 1);
+            }
+            .nav-bar-item-active {
+                background-color: #646464;
+                border-bottom: 3px solid rgba(239, 90, 40, 1);
+            }
+        }
+    }
+}
+// // // //

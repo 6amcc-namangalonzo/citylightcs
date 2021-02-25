@@ -4,6 +4,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="src/css/index.css" />
+
+        <!-- fontawesome -->
+        <link href="./src/fontawesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="./src/fontawesome/css/brands.css" rel="stylesheet" />
+        <link href="./src/fontawesome/css/solid.css" rel="stylesheet" />
+
+        <script defer src="./src/fontawesome//js/fontawesome.js"></script>
+        <script defer src="./src/fontawesome/js/solid.js"></script>
+        <script defer src="./src/fontawesome/js/brands.js"></script>
+        <script defer src="./src/js/navbar_toggle.js"></script>
+
+        <!-- bootstrap -->
         <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -29,59 +41,65 @@
     </head>
     <body>
         <div class="overflow-hidden">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarTogglerDemo01"
-                    aria-controls="navbarTogglerDemo01"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a class="navbar-brand" href="#">
-                        <img
-                            src="src/img/citylight logo horizontal.png"
-                            style="width: 150px; height: 48px"
-                            alt=""
-                        />
-                    </a>
-                    <div class="container-fluid">
-                        <div class="row justify-content-end">
-                            <div class="col-md-6">
-                                <ul class="navbar-nav justify-content-end">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="#"
-                                            >HOME</a
-                                        >
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#"
-                                            >CONTACT US</a
-                                        >
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a
-                                            class="nav-link dropdown-toggle"
-                                            data-toggle="dropdown"
-                                            href="#"
-                                            role="button"
-                                            aria-haspopup="true"
-                                            aria-expanded="false"
-                                            >MORE</a
-                                        >
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#"
-                                                >Subcontractor Invoice Form</a
-                                            >
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+            <nav class="nav-bar bg-dark">
+                <div class="container">
+                    <br />
+                    <button
+                        onclick="toggleButton()"
+                        class="btn bg-dark toggle-button"
+                    >
+                        <i
+                            class="fas fa-bars text-light"
+                            style="font-size: 40px"
+                        ></i>
+                    </button>
+                    <br />
+                </div>
+
+                <div class="nav-bar-toggle">
+                    <div class="nav-bar-logo d-flex align-items-center">
+                        <a href="index.html"
+                            ><img
+                                src="./src/img/City Light logo horizontal.svg"
+                                alt=""
+                                height="45px"
+                        /></a>
+                    </div>
+                    <div class="nav-bar-nav-container">
+                        <ul class="nav-bar-nav">
+                            <li class="nav-bar-item nav-bar-item-active">
+                                <a class="lead text-light" href="#">HOME</a>
+                            </li>
+                            <li class="nav-bar-item">
+                                <a
+                                    class="lead text-light"
+                                    href="./contact_us.html"
+                                    >CONTACT US</a
+                                >
+                            </li>
+                            <li class="nav-bar-item">
+                                <a
+                                    class="lead text-light dropdown-toggle"
+                                    href="#"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    >MORE</a
+                                >
+                                <div
+                                    class="dropdown-menu bg-dark"
+                                    aria-labelledby="navbarDropdown"
+                                >
+                                    <a
+                                        class="dropdown-item lead font-weight-light text-light"
+                                        href="#"
+                                        >Subcontractor Invoice Form</a
+                                    >
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -104,68 +122,104 @@
                             <div class="container">
                                 <div class="col-md">
                                     <div class="row">
-                                        <div
-                                            class="card bg-dark"
-                                            style="
-                                                width: 400px;
-                                                height: 250px;
-                                                margin: 10px;
-                                            "
-                                        >
+                                        <div class="card card-services">
                                             <div
-                                                class="card-body d-flex justify-content-center align-items-center"
+                                                class="card-services-container card-plumbing"
                                             >
-                                                <span class="text-light lead"
-                                                    >PLUMBING</span
+                                                <div
+                                                    class="card-services-content-container"
                                                 >
+                                                    <div
+                                                        class="card-services-content"
+                                                    >
+                                                        <div
+                                                            class="card-body h-100 d-flex flex-column justify-content-center align-items-center"
+                                                        >
+                                                            <i
+                                                                class="fas fa-hand-holding-water text-light display-4"
+                                                            ></i>
+                                                            <span
+                                                                class="text-light lead"
+                                                                >PLUMBING</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="card bg-dark"
-                                            style="
-                                                width: 400px;
-                                                height: 250px;
-                                                margin: 10px;
-                                            "
-                                        >
+                                        <div class="card card-services">
                                             <div
-                                                class="card-body d-flex justify-content-center align-items-center"
+                                                class="card-services-container card-electrical"
                                             >
-                                                <span class="text-light lead"
-                                                    >ELETRICAL</span
+                                                <div
+                                                    class="card-services-content-container"
                                                 >
+                                                    <div
+                                                        class="card-services-content"
+                                                    >
+                                                        <div
+                                                            class="card-body h-100 d-flex flex-column justify-content-center align-items-center"
+                                                        >
+                                                            <i
+                                                                class="fas fa-bolt text-light display-4"
+                                                            ></i>
+                                                            <span
+                                                                class="text-light lead"
+                                                                >ELECTRICAL</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="card bg-dark"
-                                            style="
-                                                width: 400px;
-                                                height: 250px;
-                                                margin: 10px;
-                                            "
-                                        >
+                                        <div class="card card-services">
                                             <div
-                                                class="card-body d-flex justify-content-center align-items-center"
+                                                class="card-services-container card-hvac"
                                             >
-                                                <span class="text-light lead"
-                                                    >HVAC</span
+                                                <div
+                                                    class="card-services-content-container"
                                                 >
+                                                    <div
+                                                        class="card-services-content"
+                                                    >
+                                                        <div
+                                                            class="card-body h-100 d-flex flex-column justify-content-center align-items-center"
+                                                        >
+                                                            <i
+                                                                class="fas fa-thermometer-half text-light display-4"
+                                                            ></i>
+                                                            <span
+                                                                class="text-light lead"
+                                                                >HVAC</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="card bg-dark"
-                                            style="
-                                                width: 400px;
-                                                height: 250px;
-                                                margin: 10px;
-                                            "
-                                        >
+                                        <div class="card card-services">
                                             <div
-                                                class="card-body d-flex justify-content-center align-items-center"
+                                                class="card-services-container card-roofing"
                                             >
-                                                <span class="text-light lead"
-                                                    >ROOFING/CARPENTRY</span
+                                                <div
+                                                    class="card-services-content-container"
                                                 >
+                                                    <div
+                                                        class="card-services-content"
+                                                    >
+                                                        <div
+                                                            class="card-body h-100 d-flex flex-column justify-content-center align-items-center"
+                                                        >
+                                                            <i
+                                                                class="fas fa-home text-light display-4"
+                                                            ></i>
+                                                            <span
+                                                                class="text-light lead"
+                                                                >ROOFING/CARPENTRY</span
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -183,7 +237,10 @@
                             <hr class="bg-orange" />
                         </div>
                         <div class="container">
-                            <p class="lead text-light text-right">
+                            <p
+                                style="font-size: 27px !important"
+                                class="lead text-light text-right"
+                            >
                                 CityLight Commercial Services is a one stop shop
                                 that provides complete services using cutting
                                 edge technology and a streamlined service model.
@@ -220,7 +277,7 @@
                             class="card-body d-flex justify-content-center align-items-center"
                         >
                             <img
-                                src="src/img/quality.png"
+                                src="src/img/quality.svg"
                                 width="200"
                                 height="200"
                                 alt=""
@@ -239,7 +296,7 @@
                             class="card-body d-flex justify-content-center align-items-center"
                         >
                             <img
-                                src="src/img/activity.png"
+                                src="src/img/activity.svg"
                                 width="250"
                                 height="165"
                                 alt=""
@@ -258,7 +315,7 @@
                             class="card-body d-flex justify-content-center align-items-center"
                         >
                             <img
-                                src="src/img/experience.png"
+                                src="src/img/experience.svg"
                                 width="250"
                                 height="35"
                                 alt=""
@@ -277,7 +334,7 @@
                             class="card-body d-flex justify-content-center align-items-center"
                         >
                             <img
-                                src="src/img/price.png"
+                                src="src/img/price.svg"
                                 width="250"
                                 height="120"
                                 alt=""
@@ -304,7 +361,7 @@
                     <br />
                     <div class="col-md-2">
                         <img
-                            src="src/img/citylight logo horizontal.png"
+                            src="src/img/City Light logo horizontal.svg"
                             alt=""
                             width="300"
                             height="100"
