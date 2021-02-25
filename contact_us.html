@@ -5,6 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="src/css/index.css" />
 
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon-16x16.png"
+        />
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
         <!-- fontawesome -->
         <link href="./src/fontawesome/css/fontawesome.css" rel="stylesheet" />
         <link href="./src/fontawesome/css/brands.css" rel="stylesheet" />
@@ -105,12 +114,13 @@
             </nav>
             <div
                 class="container-fluid d-flex justify-content-center align-items-center bg-dark-transparent"
-                style="height: 600px"
+                style="height: 550px"
             >
                 <img
                     src="./src/img/City Light logo light.svg"
                     height="30%"
                     alt=""
+                    data-aos="zoom-in"
                 />
             </div>
             <div class="container-fluid bg-dark">
@@ -118,27 +128,30 @@
                     <div
                         class="col-md d-flex align-items-md-center justify-content-lg-end"
                     >
-                        <div class="col-md-8">
-                            <h1 class="display-3 text-light text-md-right">
+                        <div class="col-md-10">
+                            <h1
+                                class="display-3 text-light text-md-right"
+                                data-aos="fade-up-right"
+                            >
                                 Stay engaged with
                                 <span class="text-orange">CityLight</span>
                             </h1>
                         </div>
                     </div>
-                    <div class="">
+                    <div class="" data-aos="fade-up">
                         <div class="col-md hr-vertical"></div>
                     </div>
                     <div class="col-md">
                         <div class="col-md-8">
-                            <p class="lead text-light">
+                            <p class="lead text-light" data-aos="fade-up-left">
                                 CityLight Commercial Services is excited to
                                 serve you. See why we are the best solution for
                                 all of your property investment needs. Get in
                                 touch with our team below for general inquiries
                                 or proposal requests.
                             </p>
-                            <hr class="bg-orange" />
-                            <div class="row">
+                            <hr class="bg-orange" data-aos="fade-right" />
+                            <div class="row" data-aos="fade-up-right">
                                 <div class="col-md">
                                     <p class="text-light lead text-md-right">
                                         <a
@@ -172,7 +185,7 @@
                         class="col-md d-flex align-items-md-center justify-content-md-end"
                     >
                         <div class="col-md-10">
-                            <div class="card">
+                            <div class="card" data-aos="fade-up-right">
                                 <iframe
                                     style="margin: 20px"
                                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13049.377146832905!2d-89.9129795772461!3d35.1480335!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3a875b9efb2bd48d!2sCitylight%20Commercial%20Services%20Llc!5e0!3m2!1sen!2sph!4v1614261315591!5m2!1sen!2sph"
@@ -183,11 +196,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="">
+                    <div class="" data-aos="fade-down">
                         <div class="col-md hr-vertical"></div>
                     </div>
                     <div class="col-md">
-                        <div class="col-md-8">
+                        <div class="col-md-8" data-aos="fade-up-left">
                             <p class="lead display-4 text-dark">
                                 Get in <span class="text-orange">Touch</span>
                             </p>
@@ -265,5 +278,11 @@
                 </div>
             </footer>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+            })
+        </script>
     </body>
 </html>

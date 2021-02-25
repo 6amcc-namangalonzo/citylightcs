@@ -4,6 +4,15 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="src/css/index.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon-16x16.png"
+        />
+
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
         <!-- fontawesome -->
         <link href="./src/fontawesome/css/fontawesome.css" rel="stylesheet" />
@@ -109,20 +118,31 @@
                         <div class="container">
                             <br />
                             <br />
-                            <h1 class="display-4 text-light">
+                            <h1
+                                data-aos="fade-down"
+                                class="display-4 text-light"
+                            >
                                 Maintain Your Investment Property With
                                 <span class="text-orange">Citylight</span>
                             </h1>
-                            <hr class="bg-orange" />
+                            <hr class="bg-orange" data-aos="fade-right" />
                         </div>
 
                         <br />
                         <div class="container">
-                            <h1 class="display-4 text-light">What We Do!</h1>
+                            <h1
+                                class="display-4 text-light"
+                                data-aos="fade-up-right"
+                            >
+                                What We Do!
+                            </h1>
                             <div class="container">
                                 <div class="col-md">
                                     <div class="row">
-                                        <div class="card card-services">
+                                        <div
+                                            class="card card-services"
+                                            data-aos="fade-right"
+                                        >
                                             <div
                                                 class="card-services-container card-plumbing"
                                             >
@@ -147,7 +167,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card card-services">
+                                        <div
+                                            class="card card-services"
+                                            data-aos="fade-left"
+                                        >
                                             <div
                                                 class="card-services-container card-electrical"
                                             >
@@ -172,7 +195,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card card-services">
+                                        <div
+                                            class="card card-services"
+                                            data-aos="fade-right"
+                                        >
                                             <div
                                                 class="card-services-container card-hvac"
                                             >
@@ -197,7 +223,10 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card card-services">
+                                        <div
+                                            class="card card-services"
+                                            data-aos="fade-left"
+                                        >
                                             <div
                                                 class="card-services-container card-roofing"
                                             >
@@ -230,16 +259,20 @@
                     </div>
                     <div class="col-md-3 bg-dark-transparent-2">
                         <div class="container-fluid">
-                            <h1 class="display-4 text-light text-right">
+                            <h1
+                                class="display-4 text-light text-right"
+                                data-aos="fade-left"
+                            >
                                 We are a firm with
                                 <span class="text-orange">Memphis Style</span>
                             </h1>
-                            <hr class="bg-orange" />
+                            <hr class="bg-orange" data-aos="fade-left" />
                         </div>
                         <div class="container">
                             <p
                                 style="font-size: 27px !important"
                                 class="lead text-light text-right"
+                                data-aos="fade-left"
                             >
                                 CityLight Commercial Services is a one stop shop
                                 that provides complete services using cutting
@@ -261,11 +294,11 @@
                 <br />
                 <br />
                 <div class="col-md">
-                    <h1 class="display-4">OUR RATINGS</h1>
+                    <h1 class="display-4" data-aos="fade-right">OUR RATINGS</h1>
                 </div>
                 <br />
                 <div class="row d-flex justify-content-around">
-                    <div class="card" style="width: 300px">
+                    <div class="card" style="width: 300px" data-aos="fade-left">
                         <br />
                         <div
                             class="card-title LEAD d-flex justify-content-center"
@@ -284,7 +317,11 @@
                             />
                         </div>
                     </div>
-                    <div class="card" style="width: 300px">
+                    <div
+                        class="card"
+                        style="width: 300px"
+                        data-aos="fade-right"
+                    >
                         <br />
                         <div
                             class="card-title LEAD d-flex justify-content-center"
@@ -303,7 +340,7 @@
                             />
                         </div>
                     </div>
-                    <div class="card" style="width: 300px">
+                    <div class="card" style="width: 300px" data-aos="fade-up">
                         <br />
                         <div
                             class="card-title LEAD d-flex justify-content-center"
@@ -322,7 +359,7 @@
                             />
                         </div>
                     </div>
-                    <div class="card" style="width: 300px">
+                    <div class="card" style="width: 300px" data-aos="fade-down">
                         <br />
                         <div
                             class="card-title LEAD d-flex justify-content-center"
@@ -384,5 +421,11 @@
                 </div>
             </footer>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+            })
+        </script>
     </body>
 </html>

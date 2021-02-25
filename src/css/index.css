@@ -3,6 +3,7 @@ body {
   height: 100vh !important;
   margin: 0 !important;
   background-image: url("../img/home_wallpaper.jpg");
+  background-attachment: fixed;
 }
 
 .bg-dark-transparent {
