@@ -211,10 +211,11 @@ body {
 .nav-bar-toggle .nav-bar-nav-container .nav-bar-nav li a {
   display: block;
   text-decoration: none;
-  padding: 20px;
+  padding: 10px;
+  font-size: 18px;
 }
 
-.nav-bar-toggle .nav-bar-nav-container .nav-bar-nav li a:hover {
+.nav-bar-toggle .nav-bar-nav-container .nav-bar-nav li .dropdown-item:hover {
   background-color: #646464;
 }
 
@@ -226,5 +227,13 @@ body {
 .nav-bar-toggle .nav-bar-nav-container .nav-bar-nav .nav-bar-item-active {
   background-color: #646464;
   border-bottom: 3px solid #ef5a28;
+}
+
+.our-team .row .card {
+  margin-bottom: 20px;
+}
+
+.our-team .row .card .card-body .staff-name {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=index.css.map */

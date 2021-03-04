@@ -174,9 +174,10 @@ body {
                 a {
                     display: block;
                     text-decoration: none;
-                    padding: 20px;
+                    padding: 10px;
+                    font-size: 18px;
                 }
-                a:hover {
+                .dropdown-item:hover {
                     background-color: #646464;
                 }
             }
@@ -191,4 +192,21 @@ body {
         }
     }
 }
+
 // // // //
+
+// Our Team
+
+//card
+.our-team {
+    .row {
+        .card {
+            margin-bottom: 20px;
+            .card-body {
+                .staff-name {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
