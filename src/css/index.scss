@@ -195,6 +195,18 @@ body {
 
 // // // //
 
+//homepage
+
+// what we do section // modal
+@media (min-width: 768px) {
+    .modal-service-offer {
+        .modal-dialog {
+            width: 80% !important;
+            margin: 30px auto !important;
+        }
+    }
+}
+
 // Our Team
 
 //card

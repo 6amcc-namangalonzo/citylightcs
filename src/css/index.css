@@ -229,6 +229,13 @@ body {
   border-bottom: 3px solid #ef5a28;
 }
 
+@media (min-width: 768px) {
+  .modal-service-offer .modal-dialog {
+    width: 80% !important;
+    margin: 30px auto !important;
+  }
+}
+
 .our-team .row .card {
   margin-bottom: 20px;
 }
