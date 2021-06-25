@@ -8,10 +8,10 @@ body {
 
 //colors
 .bg-dark-transparent {
-    background-color: rgba(32, 32, 32, 0.8) !important;
+    background-color: rgba(32, 32, 32, 0.6) !important;
 }
 .bg-dark-transparent-2 {
-    background-color: rgba(32, 32, 32, 0.9) !important;
+    background-color: rgba(32, 32, 32, 0.8) !important;
 }
 .bg-orange {
     background-color: rgba(239, 90, 40, 1) !important;
@@ -23,6 +23,11 @@ body {
 .hr-vertical {
     border-left: 0.1rem solid rgba(239, 90, 40, 1);
     height: 100%;
+}
+.display-5 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
 }
 // // // //
 
