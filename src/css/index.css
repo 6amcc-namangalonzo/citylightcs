@@ -2,7 +2,7 @@ html,
 body {
   height: 100vh !important;
   margin: 0 !important;
-  background-image: url(../img/citylight/cover.webp);
+  background-image: url(../img/citylight/cover.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -74,22 +74,22 @@ body {
 }
 
 .card-plumbing {
-  background-image: url(../img/citylight/plumbing.webp);
+  background-image: url(../img/citylight/plumbing.jpg);
   background-size: cover;
 }
 
 .card-electrical {
-  background-image: url(../img/citylight/electrical.webp);
+  background-image: url(../img/citylight/electrical.jpg);
   background-size: cover;
 }
 
 .card-hvac {
-  background-image: url(../img/citylight/hvac.webp);
+  background-image: url(../img/citylight/hvac.jpg);
   background-size: cover;
 }
 
 .card-roofing {
-  background-image: url(../img/citylight/roofing.webp);
+  background-image: url(../img/citylight/roofing.jpg);
   background-size: cover;
 }
 
