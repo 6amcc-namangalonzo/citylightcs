@@ -2,7 +2,22 @@ html,
 body {
   height: 100vh !important;
   margin: 0 !important;
-  background-image: url(../img/citylight/cover.jpg);
+}
+
+.bg-image-home {
+  background-image: url(../img/citylight/van3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-image-our-team {
+  background-image: url(../img/citylight/van.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-image-contact-us {
+  background-image: url(../img/citylight/employee.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
