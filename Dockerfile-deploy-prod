@@ -11,7 +11,7 @@ RUN chmod 600 LightsailDefaultKey-us-east-2.pem
 
 WORKDIR /src/wwwroot
 # copy both 'package.json' and 'package-lock.json' (if available)
-COPY src/ .
+COPY docs/ .
 
 # install project dependencies
 #RUN npm install
