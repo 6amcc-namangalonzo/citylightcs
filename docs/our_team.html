@@ -1,101 +1,82 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="favicon-16x16.png"
-        />
-        <!-- AOS -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        <!-- fontawesome -->
-        <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
-        <link href="fontawesome/css/brands.css" rel="stylesheet" />
-        <link href="fontawesome/css/solid.css" rel="stylesheet" />
+    <!-- fontawesome -->
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="fontawesome/css/solid.css" rel="stylesheet" />
 
-        <script defer src="fontawesome//js/fontawesome.js"></script>
-        <script defer src="fontawesome/js/solid.js"></script>
-        <script defer src="fontawesome/js/brands.js"></script>
-        <script defer src="js/navbar_toggle.js"></script>
+    <script defer src="fontawesome//js/fontawesome.js"></script>
+    <script defer src="fontawesome/js/solid.js"></script>
+    <script defer src="fontawesome/js/brands.js"></script>
+    <script defer src="js/navbar_toggle.js"></script>
 
-        <!-- bootstrap -->
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous"
-        />
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
-        <title>Our Team</title>
-    </head>
-    <body class="bg-image-our-team">
-        <div class="overflow-hidden">
-            <nav class="nav-bar bg-dark">
-                <div class="container">
-                    <br />
-                    <button
-                        onclick="toggleButton()"
-                        class="btn bg-dark toggle-button"
-                    >
-                        <i
-                            class="fas fa-bars text-light"
-                            style="font-size: 40px"
-                        ></i>
-                    </button>
-                    <br />
-                </div>
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Our Team</title>
+  </head>
+  <body class="bg-image-our-team">
+    <div class="overflow-hidden">
+      <nav class="nav-bar bg-dark">
+        <div class="container">
+          <br />
+          <button onclick="toggleButton()" class="btn bg-dark toggle-button">
+            <i class="fas fa-bars text-light" style="font-size: 40px"></i>
+          </button>
+          <br />
+        </div>
 
-                <div class="nav-bar-toggle">
-                    <div class="nav-bar-logo d-flex align-items-center">
-                        <a href="./index.html"
-                            ><img
-                                src="img/City Light logo horizontal.svg"
-                                alt=""
-                                height="45px"
-                        /></a>
-                    </div>
-                    <div class="nav-bar-nav-container">
-                        <ul class="nav-bar-nav">
-                            <li class="nav-bar-item">
-                                <a class="lead text-light" href="./index.html"
-                                    >HOME</a
-                                >
-                            </li>
-                            <li class="nav-bar-item nav-bar-item-active">
-                                <a
-                                    class="lead text-light"
-                                    href="./our_team.html"
-                                    >OUR TEAM</a
-                                >
-                            </li>
-                            <li class="nav-bar-item">
-                                <a
-                                    class="lead text-light"
-                                    href="./contact_us.html"
-                                    >CONTACT US</a
-                                >
-                            </li>
-                            <!-- <li class="nav-bar-item">
+        <div class="nav-bar-toggle">
+          <div class="nav-bar-logo d-flex align-items-center">
+            <a href="./index.html"
+              ><img
+                src="img/City Light logo horizontal.svg"
+                alt=""
+                height="45px"
+            /></a>
+          </div>
+          <div class="nav-bar-nav-container">
+            <ul class="nav-bar-nav">
+              <li class="nav-bar-item">
+                <a class="lead text-light" href="./index.html">HOME</a>
+              </li>
+              <li class="nav-bar-item nav-bar-item-active">
+                <a class="lead text-light" href="./our_team.html">OUR TEAM</a>
+              </li>
+              <li class="nav-bar-item">
+                <a class="lead text-light" href="./contact_us.html"
+                  >CONTACT US</a
+                >
+              </li>
+              <!-- <li class="nav-bar-item">
                                 <a
                                     class="lead text-light dropdown-toggle"
                                     href="#"
@@ -122,112 +103,82 @@
                                     >
                                 </div>
                             </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div
-                class="
-                    container-fluid
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                    bg-dark-transparent
-                "
-                style="height: 550px"
-            >
-                <img
-                    src="img/City Light logo light.svg"
-                    height="30%"
-                    alt=""
-                    data-aos="zoom-in"
-                />
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center bg-dark-transparent"
+        style="height: 550px"
+      >
+        <img
+          src="img/City Light logo light.svg"
+          height="30%"
+          alt=""
+          data-aos="zoom-in"
+        />
+      </div>
+      <div class="container-fluid bg-light">
+        <div class="col-md">
+          <h1 class="display-5 text-orange text-center">Meet Our Team</h1>
+        </div>
+        <div class="col-md">
+          <hr />
+        </div>
+        <div class="row d-flex justify-content-md-center">
+          <div data-aos="fade-right" class="card bg-light border-0">
+            <div class="card-body">
+              <img
+                class="rounded-circle shadow-sm p-2 bg-orange"
+                src="img/staff/robert.jpg"
+                width="320px"
+                height="320px"
+                alt="Robert"
+              />
+              <p
+                style="font-size: 30px !important"
+                class="lead text-orange font-weight-normal staff-name text-center"
+              >
+                Robert Matlock
+              </p>
+              <p class="lead staff-position text-center">
+                Assistant Operations Manager
+              </p>
             </div>
-            <div class="container-fluid bg-light">
-                <div class="col-md">
-                    <h1 class="display-5 text-orange text-center">
-                        Meet Our Team
-                    </h1>
+          </div>
+        </div>
+        <div class="col-md">
+          <hr />
+        </div>
+        <div class="row" data-aos="fade-up-right">
+          <div class="col-md">
+            <div class="col-md-3">
+              <h1 class="display-5 text-center">Electrical</h1>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-md-3 d-flex justify-content-center">
+                <div class="card bg-light border-0">
+                  <div class="card-body">
+                    <img
+                      class="rounded-circle shadow-sm p-2 bg-orange"
+                      src="img/staff/chad.jpg"
+                      width="320px"
+                      height="320px"
+                      alt="brad"
+                    />
+                    <p
+                      style="font-size: 30px !important"
+                      class="lead text-orange text-center font-weight-normal staff-name"
+                    >
+                      Brad Chipman
+                    </p>
+                    <p class="lead text-center staff-position">
+                      Electrical Field Manager
+                    </p>
+                  </div>
                 </div>
-                <div class="col-md">
-                    <hr />
-                </div>
-                <div class="row d-flex justify-content-md-center">
-                    <div data-aos="fade-right" class="card bg-light border-0">
-                        <div class="card-body">
-                            <img
-                                class="rounded-circle shadow-sm p-2 bg-orange"
-                                src="img/staff/robert.jpg"
-                                width="320px"
-                                height="320px"
-                                alt="Robert"
-                            />
-                            <p
-                                style="font-size: 30px !important"
-                                class="
-                                    lead
-                                    text-orange
-                                    font-weight-normal
-                                    staff-name
-                                    text-center
-                                "
-                            >
-                                Robert Matlock
-                            </p>
-                            <p class="lead staff-position text-center">
-                                Trades Manager
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <hr />
-                </div>
-                <div class="row" data-aos="fade-up-right">
-                    <div class="col-md">
-                        <div class="col-md-3">
-                            <h1 class="display-5 text-center">Electrical</h1>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col-md-3 d-flex justify-content-center">
-                                <div class="card bg-light border-0">
-                                    <div class="card-body">
-                                        <img
-                                            class="
-                                                rounded-circle
-                                                shadow-sm
-                                                p-2
-                                                bg-orange
-                                            "
-                                            src="img/staff/chad.jpg"
-                                            width="320px"
-                                            height="320px"
-                                            alt="brad"
-                                        />
-                                        <p
-                                            style="font-size: 30px !important"
-                                            class="
-                                                lead
-                                                text-orange text-center
-                                                font-weight-normal
-                                                staff-name
-                                            "
-                                        >
-                                            Brad Chipman
-                                        </p>
-                                        <p
-                                            class="
-                                                lead
-                                                text-center
-                                                staff-position
-                                            "
-                                        >
-                                            Interim Electrical Field Manager
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- <div class="card bg-light border-0">
+                <!-- <div class="card bg-light border-0">
                                     <div class="card-body">
                                         <img
                                             class="
@@ -264,253 +215,160 @@
                                         </p>
                                     </div>
                                 </div> -->
-                            </div>
-                            <div
-                                class="
-                                    col-md
-                                    border-left
-                                    d-flex
-                                    justify-content-center
-                                "
-                            >
-                                <div class="row">
-                                    <!-- underlings of leader -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-md border-left d-flex justify-content-center">
+                <div class="row">
+                  <!-- underlings of leader -->
                 </div>
-                <div class="col-md" data-aos="fade-up-right">
-                    <div class="col-md-3">
-                        <h1 class="display-5 text-center">Carpentry/Roofing</h1>
-                    </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card bg-light border-0">
-                                <div class="card-body">
-                                    <img
-                                        class="
-                                            rounded-circle
-                                            shadow-sm
-                                            p-2
-                                            bg-orange
-                                        "
-                                        src="img/staff/james.jpg"
-                                        width="320px"
-                                        height="320px"
-                                        alt="james"
-                                    />
-                                    <p
-                                        style="font-size: 30px !important"
-                                        class="
-                                            lead
-                                            text-orange
-                                            font-weight-normal
-                                            staff-name
-                                            text-center
-                                        "
-                                    >
-                                        James Pridmore
-                                    </p>
-                                    <p class="lead staff-position text-center">
-                                        Carpentry/Roofing Field Manager
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md border-left">
-                            <div class="row d-flex justify-content-around">
-                                <div class="card bg-light border-0">
-                                    <div class="card-body">
-                                        <img
-                                            class="
-                                                rounded-circle
-                                                shadow-sm
-                                                p-2
-                                                bg-orange
-                                            "
-                                            src="img/staff/david.jpg"
-                                            width="320px"
-                                            height="320px"
-                                            alt="david"
-                                        />
-                                        <p
-                                            style="font-size: 30px !important"
-                                            class="
-                                                lead
-                                                text-orange text-center
-                                                font-weight-normal
-                                                staff-name
-                                            "
-                                        >
-                                            David Heathcoat
-                                        </p>
-                                        <p
-                                            class="
-                                                lead
-                                                text-center
-                                                staff-position
-                                            "
-                                        >
-                                            Carpentry Technician
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card bg-light border-0">
-                                    <div class="card-body">
-                                        <img
-                                            class="
-                                                rounded-circle
-                                                shadow-sm
-                                                p-2
-                                                bg-orange
-                                            "
-                                            src="img/staff/Raymond.jpg"
-                                            width="320px"
-                                            height="320px"
-                                            alt="Raymond"
-                                        />
-                                        <p
-                                            style="font-size: 30px !important"
-                                            class="
-                                                lead
-                                                text-orange text-center
-                                                font-weight-normal
-                                                staff-name
-                                            "
-                                        >
-                                            Raymond Morris
-                                        </p>
-                                        <p
-                                            class="
-                                                lead
-                                                text-center
-                                                staff-position
-                                            "
-                                        >
-                                            Carpentry Technician
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card bg-light border-0">
-                                    <div class="card-body">
-                                        <img
-                                            class="
-                                                rounded-circle
-                                                shadow-sm
-                                                p-2
-                                                bg-orange
-                                            "
-                                            src="img/staff/wesley.jpg"
-                                            width="320px"
-                                            height="320px"
-                                            alt="wesley"
-                                        />
-                                        <p
-                                            style="font-size: 30px !important"
-                                            class="
-                                                lead
-                                                text-orange text-center
-                                                font-weight-normal
-                                                staff-name
-                                            "
-                                        >
-                                            Wesley Cross
-                                        </p>
-                                        <p
-                                            class="
-                                                lead
-                                                text-center
-                                                staff-position
-                                            "
-                                        >
-                                            Roofing/Carpentry Technician
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md" data-aos="fade-up-right">
+          <div class="col-md-3">
+            <h1 class="display-5 text-center">Carpentry/Roofing</h1>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="card bg-light border-0">
+                <div class="card-body">
+                  <img
+                    class="rounded-circle shadow-sm p-2 bg-orange"
+                    src="img/staff/james.jpg"
+                    width="320px"
+                    height="320px"
+                    alt="james"
+                  />
+                  <p
+                    style="font-size: 30px !important"
+                    class="lead text-orange font-weight-normal staff-name text-center"
+                  >
+                    James Pridmore
+                  </p>
+                  <p class="lead staff-position text-center">
+                    Carpentry/Roofing Field Manager
+                  </p>
                 </div>
-                <div class="col-md" data-aos="fade-up-right">
-                    <div class="col-md-3">
-                        <h1 class="display-5 text-center">HVAC</h1>
-                    </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card bg-light border-0">
-                                <div class="card-body">
-                                    <img
-                                        class="
-                                            rounded-circle
-                                            shadow-sm
-                                            p-2
-                                            bg-orange
-                                        "
-                                        src="img/staff/edward.jpg"
-                                        width="320px"
-                                        height="320px"
-                                        alt="edward"
-                                    />
-                                    <p
-                                        style="font-size: 30px !important"
-                                        class="
-                                            lead
-                                            text-orange
-                                            font-weight-normal
-                                            staff-name
-                                            text-center
-                                        "
-                                    >
-                                        Edward Reed
-                                    </p>
-                                    <p class="lead staff-position text-center">
-                                        HVAC Field Manager
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md border-left">
-                            <div class="row d-flex justify-content-around">
-                                <div class="card bg-light border-0">
-                                    <div class="card-body">
-                                        <img
-                                            class="
-                                                rounded-circle
-                                                shadow-sm
-                                                p-2
-                                                bg-orange
-                                            "
-                                            src="img/staff/lee.jpg"
-                                            width="320px"
-                                            height="320px"
-                                            alt="lee"
-                                        />
-                                        <p
-                                            style="font-size: 30px !important"
-                                            class="
-                                                lead
-                                                text-orange text-center
-                                                font-weight-normal
-                                                staff-name
-                                            "
-                                        >
-                                            Lee Bell
-                                        </p>
-                                        <p
-                                            class="
-                                                lead
-                                                text-center
-                                                staff-position
-                                            "
-                                        >
-                                            HVAC Technician
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- <div class="card bg-light border-0">
+              </div>
+            </div>
+            <div class="col-md border-left">
+              <div class="row d-flex justify-content-around">
+                <div class="card bg-light border-0">
+                  <div class="card-body">
+                    <img
+                      class="rounded-circle shadow-sm p-2 bg-orange"
+                      src="img/staff/david.jpg"
+                      width="320px"
+                      height="320px"
+                      alt="david"
+                    />
+                    <p
+                      style="font-size: 30px !important"
+                      class="lead text-orange text-center font-weight-normal staff-name"
+                    >
+                      David Heathcoat
+                    </p>
+                    <p class="lead text-center staff-position">
+                      Carpentry Technician
+                    </p>
+                  </div>
+                </div>
+                <div class="card bg-light border-0">
+                  <div class="card-body">
+                    <img
+                      class="rounded-circle shadow-sm p-2 bg-orange"
+                      src="img/staff/Raymond.jpg"
+                      width="320px"
+                      height="320px"
+                      alt="Raymond"
+                    />
+                    <p
+                      style="font-size: 30px !important"
+                      class="lead text-orange text-center font-weight-normal staff-name"
+                    >
+                      Raymond Morris
+                    </p>
+                    <p class="lead text-center staff-position">
+                      Carpentry Technician
+                    </p>
+                  </div>
+                </div>
+                <div class="card bg-light border-0">
+                  <div class="card-body">
+                    <img
+                      class="rounded-circle shadow-sm p-2 bg-orange"
+                      src="img/staff/tanner.jpg"
+                      width="320px"
+                      height="320px"
+                      alt="wesley"
+                    />
+                    <p
+                      style="font-size: 30px !important"
+                      class="lead text-orange text-center font-weight-normal staff-name"
+                    >
+                      Tanner McAnulty
+                    </p>
+                    <p class="lead text-center staff-position">
+                      Roofing/Carpentry Technician
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md" data-aos="fade-up-right">
+          <div class="col-md-3">
+            <h1 class="display-5 text-center">HVAC</h1>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="card bg-light border-0">
+                <div class="card-body">
+                  <img
+                    class="rounded-circle shadow-sm p-2 bg-orange"
+                    src="img/staff/edward.jpg"
+                    width="320px"
+                    height="320px"
+                    alt="edward"
+                  />
+                  <p
+                    style="font-size: 30px !important"
+                    class="lead text-orange font-weight-normal staff-name text-center"
+                  >
+                    Edward Reed
+                  </p>
+                  <p class="lead staff-position text-center">
+                    HVAC Field Manager
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md border-left">
+              <div class="row d-flex justify-content-around">
+                <div class="card bg-light border-0">
+                  <div class="card-body">
+                    <img
+                      class="rounded-circle shadow-sm p-2 bg-orange"
+                      src="img/staff/lee.jpg"
+                      width="320px"
+                      height="320px"
+                      alt="lee"
+                    />
+                    <p
+                      style="font-size: 30px !important"
+                      class="lead text-orange text-center font-weight-normal staff-name"
+                    >
+                      Lee Bell
+                    </p>
+                    <p class="lead text-center staff-position">
+                      HVAC Technician
+                    </p>
+                  </div>
+                </div>
+                <!-- <div class="card bg-light border-0">
                                     <div class="card-body">
                                         <img
                                             class="
@@ -546,170 +404,117 @@
                                         </p>
                                     </div>
                                 </div> -->
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md" data-aos="fade-up-right">
+          <div class="col-md-3">
+            <h1 class="display-5 text-center">Plumbing</h1>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-3 d-flex justify-content-center">
+              <!-- <div class="card bg-light border-0">
+                <div class="card-body">
+                  <img
+                    class="rounded-circle shadow-sm p-2 bg-orange"
+                    src="img/staff/bobby.jpg"
+                    width="320px"
+                    height="320px"
+                    alt="bobby"
+                  />
+                  <p
+                    style="font-size: 30px !important"
+                    class="lead text-orange font-weight-normal staff-name text-center"
+                  >
+                    Bobby Manuel
+                  </p>
+                  <p class="lead staff-position text-center">
+                    Plumbing Field Manager
+                  </p>
                 </div>
-                <div class="col-md" data-aos="fade-up-right">
-                    <div class="col-md-3">
-                        <h1 class="display-5 text-center">Plumbing</h1>
-                    </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card bg-light border-0">
-                                <div class="card-body">
-                                    <img
-                                        class="
-                                            rounded-circle
-                                            shadow-sm
-                                            p-2
-                                            bg-orange
-                                        "
-                                        src="img/staff/bobby.jpg"
-                                        width="320px"
-                                        height="320px"
-                                        alt="bobby"
-                                    />
-                                    <p
-                                        style="font-size: 30px !important"
-                                        class="
-                                            lead
-                                            text-orange
-                                            font-weight-normal
-                                            staff-name
-                                            text-center
-                                        "
-                                    >
-                                        Bobby Manuel
-                                    </p>
-                                    <p class="lead staff-position text-center">
-                                        Plumbing Field Manager
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md border-left">
-                            <div class="row d-flex justify-content-around">
-                                <div class="card bg-light border-0">
-                                    <div class="card-body">
-                                        <img
-                                            class="
-                                                rounded-circle
-                                                shadow-sm
-                                                p-2
-                                                bg-orange
-                                            "
-                                            src="img/staff/jerome.jpg"
-                                            width="320px"
-                                            height="320px"
-                                            alt="jerome"
-                                        />
-                                        <p
-                                            style="font-size: 30px !important"
-                                            class="
-                                                lead
-                                                text-orange text-center
-                                                font-weight-normal
-                                                staff-name
-                                            "
-                                        >
-                                            Jerome Watkins
-                                        </p>
-                                        <p
-                                            class="
-                                                lead
-                                                text-center
-                                                staff-position
-                                            "
-                                        >
-                                            Plumbing/HVAC Technician
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="card bg-light border-0">
-                                    <div class="card-body">
-                                        <img
-                                            class="
-                                                rounded-circle
-                                                shadow-sm
-                                                p-2
-                                                bg-orange
-                                            "
-                                            src="img/staff/detroy.jpg"
-                                            width="320px"
-                                            height="330px"
-                                            alt="leslie"
-                                        />
-                                        <p
-                                            style="font-size: 30px !important"
-                                            class="
-                                                lead
-                                                text-orange text-center
-                                                font-weight-normal
-                                                staff-name
-                                            "
-                                        >
-                                            DeTroy Williams
-                                        </p>
-                                        <p
-                                            class="
-                                                lead
-                                                text-center
-                                                staff-position
-                                            "
-                                        >
-                                            Plumbing Technician
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div> -->
+            </div>
+            <div class="col-md border-left">
+              <div class="row d-flex justify-content-around">
+                <div class="card bg-light border-0">
+                  <div class="card-body">
+                    <img
+                      class="rounded-circle shadow-sm p-2 bg-orange"
+                      src="img/staff/jerome.jpg"
+                      width="320px"
+                      height="320px"
+                      alt="jerome"
+                    />
+                    <p
+                      style="font-size: 30px !important"
+                      class="lead text-orange text-center font-weight-normal staff-name"
+                    >
+                      Jerome Watkins
+                    </p>
+                    <p class="lead text-center staff-position">
+                      Plumbing/HVAC Technician
+                    </p>
+                  </div>
                 </div>
-                <div class="col-md" data-aos="fade-up-right">
-                    <div class="col-md-3">
-                        <h1 class="display-5 text-center">Other Technicians</h1>
-                    </div>
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card bg-light border-0">
-                                <div class="card-body">
-                                    <img
-                                        class="
-                                            rounded-circle
-                                            shadow-sm
-                                            p-2
-                                            bg-orange
-                                        "
-                                        src="img/staff/leslie.jpg"
-                                        width="320px"
-                                        height="320px"
-                                        alt="leslie"
-                                    />
-                                    <p
-                                        style="font-size: 30px !important"
-                                        class="
-                                            lead
-                                            text-orange text-center
-                                            font-weight-normal
-                                            staff-name
-                                        "
-                                    >
-                                        Leslie Allen
-                                    </p>
-                                    <p class="lead text-center staff-position">
-                                        Technician Assistant
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md border-left">
-                            <div class="row d-flex justify-content-around">
-                                <!-- Underlings of leader -->
+                <div class="card bg-light border-0">
+                  <div class="card-body">
+                    <img
+                      class="rounded-circle shadow-sm p-2 bg-orange"
+                      src="img/staff/detroy.jpg"
+                      width="320px"
+                      height="330px"
+                      alt="leslie"
+                    />
+                    <p
+                      style="font-size: 30px !important"
+                      class="lead text-orange text-center font-weight-normal staff-name"
+                    >
+                      DeTroy Williams
+                    </p>
+                    <p class="lead text-center staff-position">
+                      Plumbing Technician
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md" data-aos="fade-up-right">
+          <div class="col-md-3">
+            <h1 class="display-5 text-center">Other Technicians</h1>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-3 d-flex justify-content-center">
+              <div class="card bg-light border-0">
+                <div class="card-body">
+                  <img
+                    class="rounded-circle shadow-sm p-2 bg-orange"
+                    src="img/staff/leslie.jpg"
+                    width="320px"
+                    height="320px"
+                    alt="leslie"
+                  />
+                  <p
+                    style="font-size: 30px !important"
+                    class="lead text-orange text-center font-weight-normal staff-name"
+                  >
+                    Leslie Allen
+                  </p>
+                  <p class="lead text-center staff-position">
+                    Technician Assistant
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md border-left">
+              <div class="row d-flex justify-content-around">
+                <!-- Underlings of leader -->
 
-                                <!-- <div class="card bg-light border-0">
+                <!-- <div class="card bg-light border-0">
                                     <div class="card-body">
                                         <img
                                             class="
@@ -745,13 +550,13 @@
                                         </p>
                                     </div>
                                 </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <!-- <div class="container-fluid bg-light our-team">
+      <!-- <div class="container-fluid bg-light our-team">
                 <br />
                 <div class="col-md d-flex justify-content-md-center">
                     <h1
@@ -1218,54 +1023,47 @@
                 <br />
                 <br />
             </div> -->
-            <footer>
-                <div
-                    class="
-                        container-fluid
-                        bg-dark
-                        d-flex
-                        flex-column
-                        align-items-center
-                    "
-                >
-                    <br />
-                    <div class="col-md-2">
-                        <img
-                            src="img/City Light logo horizontal.svg"
-                            alt=""
-                            width="300"
-                            height="100"
-                        />
-                    </div>
-                    <br />
-                    <div class="col-md-8 text-light lead text-center">
-                        <p>
-                            Our mission is to provide the highest quality
-                            construction and maintenance services to our
-                            clients.
-                        </p>
-                        <p>
-                            TN-licensed Electrical, HVAC, Plumbing, and General
-                            Contractor (License #70066)
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <hr class="bg-orange" />
-                    </div>
-                    <div class="col-md-8 text-light lead text-center">
-                        <p>
-                            © City Light Commercial Services. All Rights
-                            Reserved. | Powered by Inari Interactive
-                        </p>
-                    </div>
-                </div>
-            </footer>
+      <footer>
+        <div
+          class="container-fluid bg-dark d-flex flex-column align-items-center"
+        >
+          <br />
+          <div class="col-md-2">
+            <img
+              src="img/City Light logo horizontal.svg"
+              alt=""
+              width="300"
+              height="100"
+            />
+          </div>
+          <br />
+          <div class="col-md-8 text-light lead text-center">
+            <p>
+              Our mission is to provide the highest quality construction and
+              maintenance services to our clients.
+            </p>
+            <p>
+              TN-licensed Electrical, HVAC, Plumbing, and General Contractor
+              (License #70066)
+            </p>
+          </div>
+          <div class="col-md-6">
+            <hr class="bg-orange" />
+          </div>
+          <div class="col-md-8 text-light lead text-center">
+            <p>
+              © City Light Commercial Services. All Rights Reserved. | Powered
+              by Inari Interactive
+            </p>
+          </div>
         </div>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init({
-                once: true,
-            })
-        </script>
-    </body>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      })
+    </script>
+  </body>
 </html>
